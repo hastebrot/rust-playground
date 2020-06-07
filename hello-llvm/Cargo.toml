@@ -1,0 +1,12 @@
+[package]
+name = "hello-llvm"
+version = "0.1.0"
+authors = ["Benjamin Gudehus"]
+edition = "2018"
+
+[[bin]]
+name = "hello_llvm"
+path = "src/hello_llvm.rs"
+
+[dependencies]
+llvm-sys = "100"
