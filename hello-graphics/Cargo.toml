@@ -1,0 +1,21 @@
+[package]
+name = "hello-graphics"
+version = "0.1.0"
+authors = ["Benjamin Gudehus"]
+edition = "2018"
+
+[[bin]]
+name = "hello_graphics_3d"
+path = "src/hello_graphics_3d.rs"
+
+[[bin]]
+name = "hello_graphics_2d"
+path = "src/hello_graphics_2d.rs"
+
+[dependencies]
+kiss3d = "0.24.1"
+nalgebra = "0.21.1"
+piet = "0.1.0"
+piet-common = "0.1.1"
+png = "0.16.4"
+
