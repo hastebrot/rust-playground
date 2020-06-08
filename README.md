@@ -2,6 +2,10 @@
 
 ## hello-llvm
 
+Dependencies.
+
+* [llvm-sys - crates.io: Rust Package Registry](https://crates.io/crates/llvm-sys)
+
 Install external dependencies.
 
 ~~~console
