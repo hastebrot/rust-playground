@@ -1,0 +1,7 @@
+[package]
+name = "hello-trees"
+version = "0.1.0"
+authors = ["Benjamin Gudehus"]
+edition = "2018"
+
+[dependencies]

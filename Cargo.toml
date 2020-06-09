@@ -2,5 +2,6 @@
 members = [
     "hello-world",
     "hello-llvm",
-    "hello-graphics"
+    "hello-graphics",
+    "hello-trees"
 ]

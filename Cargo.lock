@@ -506,6 +506,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "hello-trees"
+version = "0.1.0"
+
+[[package]]
 name = "hello-world"
 version = "0.1.0"
 
