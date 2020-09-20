@@ -1,0 +1,12 @@
+[package]
+name = "hello-game"
+version = "0.1.0"
+authors = ["Benjamin Gudehus <hastebrot@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "hello_game"
+path = "src/hello_game.rs"
+
+[dependencies]
+bevy = "0.2.0"

@@ -1,5 +1,11 @@
 # rust-playground
 
+## hello-game
+
+~~~console
+$ cargo run --bin hello_game
+~~~
+
 ## hello-llvm
 
 Dependencies.

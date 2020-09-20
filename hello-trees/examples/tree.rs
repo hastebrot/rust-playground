@@ -1,15 +1,15 @@
 use std::cmp::max;
 
 fn main() {
-    let mut root = Node::new(1);
-    root.left = Some(Box::new(Node::new(2)));
+    let mut root = Vertex::new(1);
+    root.left = Some(Box::new(Vertex::new(2)));
 
     println!("root = {:?}", root);
     println!("depth = {}", calculate_depth(Some(Box::new(root)), 0));
 }
 
-fn calculate_depth<T>(edge: Edge<T>, depth: i32) -> i32 {
-    match edge {
+fn calculate_depth<T>(link: Link<T>, depth: i32) -> i32 {
+    match link {
         None => depth,
         Some(node) => max(
             calculate_depth(node.left, depth + 1),
@@ -19,15 +19,15 @@ fn calculate_depth<T>(edge: Edge<T>, depth: i32) -> i32 {
 }
 
 #[derive(Debug)]
-struct Node<T> {
+struct Vertex<T> {
     value: T,
-    left: Edge<T>,
-    right: Edge<T>,
+    left: Link<T>,
+    right: Link<T>,
 }
 
-impl<T> Node<T> {
+impl<T> Vertex<T> {
     fn new(value: T) -> Self {
-        Node {
+        Vertex {
             value,
             left: None,
             right: None,
@@ -35,4 +35,4 @@ impl<T> Node<T> {
     }
 }
 
-type Edge<T> = Option<Box<Node<T>>>;
+type Link<T> = Option<Box<Vertex<T>>>;
